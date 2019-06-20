@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body {
+  background-image: url("../images/prism.png");
+ }
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: white;
+}
+.inner-header {
+  width: 960px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.name {
+  height: 100%;
+  display: table;
+  float: left;
+}
+.name h1 {
+  clear: both;
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: Montserrat;
+  padding-left: 40px;
+  background-color: #4aaaa5;
+  width: 180px;
+}
+.nav {
+  float: right;
+  height: 100%;
+  color: #4aaaa5;
+}
+.nav a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+.nav a li {
+  clear: both;
+  display: table-cell;
+  vertical-align: middle;
+  color: #4aaaa5;
+  font-family: Montserrat;
+}
+
+.post-content {
+    background-color: #ffffff;
+    width: 960px;
+    height: 0%;
+    margin: 24px auto;
+    font-family: Montserrat;
+    overflow: auto;
+}
+
+.portfolio {
+    padding: 20px;
+    margin-left: 17px;
+    color: #4aaaa5;
+    overflow: auto;
+}
+
+.line {
+    border-bottom: 2px solid #4aaaa58c;
+    width: 95%;
+    position: relative;
+    left: 25px;
+}
+  
+img {
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+
+.footer {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #666666;
+    position: fixed;
+    bottom: -10px;
+    border-top: 7px solid #cccccc;
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS for screens that are 768 pixels or less will be put in this section */
+   .post-content {
+    width: 100%
+  }
+  .nav {
+    position:relative;
+    right:220px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  /* CSS for screens that are 640 pixels or less will be put in this section */
+  .post-content {
+    width: 100%
+  }
+  .nav {
+    position:relative;
+    right:435px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
